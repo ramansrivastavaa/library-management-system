@@ -40,12 +40,7 @@ CREATE TABLE IF NOT EXISTS `issue_books` (
   PRIMARY KEY (`issue_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
---
--- Dumping data for table `issue_books`
---
 
-INSERT INTO `issue_books` (`issue_id`, `name`, `branch`, `sem`, `enr`, `email`, `bname`, `issue_date`, `mobile`, `date`, `return_date`) VALUES
-(1, 'raman', 'cse', '4', 'e1747700043', 'monusrivastava42@gmail.com', 'electrical', '2020-07-11', '9651736829', 2020, '11/07/2020');
 
 -- --------------------------------------------------------
 
@@ -139,11 +134,3 @@ CREATE TABLE IF NOT EXISTS `tbl_student` (
   `date` varchar(20) NOT NULL,
   PRIMARY KEY (`stdid`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `tbl_student`
---
-
-INSERT INTO `tbl_student` (`stdid`, `email`, `password`, `status`, `name`, `fname`, `gender`, `sem`, `mobile`, `dob`, `address`, `photo`, `branch`, `enr`, `date`) VALUES
-(1, 'st@gmail.com', 'st', 'yes', '', '', '', '', '', '', '', '', '', '', ''),
-(2, 'monusrivastava42@gmail.com', 'monu', 'yes', 'raman', 'rakesh', 'male', '4', '9651736829', '1999-12-05', 'gurauli ka purwa\r\nvijaimau\r\nsamgramgarh\r\npratapgarh', '1532948710780.jpg', 'cse', 'e1747700043', '2020-07-11 16:38:31');
